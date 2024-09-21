@@ -2,3 +2,37 @@
 ---
 
 @import "{{ site.theme }}";
+
+/* Nav-Bar styling */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(90deg, #2e865b, #256fb9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar li{
+    float: left;
+}
+
+.nav-bar li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-bar li a:hover {
+    background-color: #2f7385;
+}
+
+.page-header {
+    padding-top: 150px;
+}

@@ -20,10 +20,16 @@
       <nav>
         <ul class="nav-bar">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/presentations">Presentations</a></li>
-          <li><a href="/deliverables">Deliverables</a></li>
-          <li><a href="/references">References</a></li>
+          <li>
+            <a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#problem-statement">The Problem</a></li>
+              <li><a href="#solution-statement">The Solution</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Presentations</a></li>
+          <li><a href="#">Deliverables</a></li>
+          <li><a href="#">References</a></li>
         </ul>
       </nav>
 
@@ -39,7 +45,25 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <div id="problem-statement">
+        <h1>Problem Statement</h1>
+        <p>Replace with the problem statement.</p>
+      </div>
+
+      <div id="problem-char">
+        <h1>Problem Characteristics</h1>
+        <P>Replace with the problem characteristics.</P>
+      </div>
+
+    <div id="solution-statement">
+        <h1>Solution Statement</h1>
+        <p>Replace with the solution statement.</p>
+    </div>
+
+    <div id="solution-char">
+      <h1>Solution Characteristics</h1>
+      <p>Replace with the solution characteristics.</p>
+    </div>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}

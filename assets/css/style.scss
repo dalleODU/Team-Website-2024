@@ -14,11 +14,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .nav-bar li{
     float: left;
+    position: relative;
 }
 
 .nav-bar li a {
@@ -33,6 +34,80 @@
     background-color: #2f7385;
 }
 
+
+
+/* Nav bar dropdown styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    min-width: 150px;
+}
+
+.nav-bar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    text-align: left;
+    padding: 8px 12px;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+
+
+/* Header styling*/
 .page-header {
     padding-top: 150px;
+}
+
+
+
+/* Main content styling */
+#problem-statement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#problem-char {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#solution-statement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#solution-char {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }

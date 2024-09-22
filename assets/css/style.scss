@@ -77,29 +77,44 @@
 
 
 
-/* Header styling*/
+/* Banner styling*/
 .page-header {
-    padding-top: 150px;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3%;
+}
+
+#title {
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+
+#tagline {
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5)
 }
 
 
 
 /* Main content styling */
-#problem-statement {
-    text-align: center;
-    margin-bottom: 20px;
+body {
+    padding-top: 52px; 
 }
 
-#problem-char {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#solution-statement {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
+#problem-statement,
+#problem-char,
+#solution-statement,
 #solution-char {
     text-align: center;
     margin-bottom: 20px;

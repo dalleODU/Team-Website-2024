@@ -1,0 +1,36 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+
+/* Default styling for main content*/
+.main-custom {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+.main-custom h1,
+.main-custom h2,
+.main-custom h3,
+.main-custom h4,
+.main-custom h5,
+.main-custom h6 {
+    font-weight: normal;
+    color: #001f3f;
+}
+
+.main-custom h1 {
+    margin-bottom: 0.5rem;
+}

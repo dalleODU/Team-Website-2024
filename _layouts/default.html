@@ -2,70 +2,141 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
     {% seo %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
+
+  <!--Site Body-->
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <!-- Nav Bar-->
-      <nav>
-        <ul class="nav-bar">
-          <li><a href="./">Home</a></li>
-          <li>
-            <a href="#">About</a>
-            <ul class="dropdown">
-              <li><a href="#problem-statement">The Problem</a></li>
-              <li><a href="#solution-statement">The Solution</a></li>
-            </ul>
-          </li>
-          <li><a href="#google-slides">Presentations</a></li>
-          <li><a href="#">Deliverables</a></li>
-          <li><a href="#">References</a></li>
-        </ul>
-      </nav>
+    <!-- Navigation Bar-->
+    <nav>
+      <ul class="nav-bar">
+        <li><a href="./">Home</a></li>
+        <li>
+          <a href="#">About</a>
+          <ul class="dropdown">
+            <li><a href="#problem-statement">The Problem</a></li>
+            <li><a href="#solution-statement">The Solution</a></li>
+            <li><a href="#team-section">The Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#google-slides">Presentations</a></li>
+        <li><a href="#">Deliverables</a></li>
+        <li><a href="#">References</a></li>
+      </ul>
+    </nav>
 
-      <h1 id="title">CreditTrax</h1>
-      <h2 id="tagline">Your path to better credit and smarter budgeting.</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
+    <!--Site Header-->
+    <header class="custom-header" role="banner">
+      <div class="header-content">
+          <h1 id="title">CreditTrax</h1>
+          <h2 id="tagline">Your path to better credit and smarter budgeting.</h2>
+          <div class="header-buttons">
+              {% if site.github.is_project_page %}
+                  <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+              {% endif %}
+              {% if site.show_downloads %}
+                  <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+                  <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+              {% endif %}
+          </div>
+      </div>
     </header>
+  
+  <!--Main Content Area-->
+  <main id="content" class="main-custom" role="main">
 
-    <main id="content" class="main-content" role="main">
-      <div id="problem-statement">
-        <h1>Problem Statement</h1>
-        <p>Replace with the problem statement.</p>
+    <!--Problem Statement Section-->
+    <section id="problem-statement" class="content-section image-text">
+      <div class="section-content">
+        <div class="image-content">
+          <img src="/assets/images/main-content/problem-char-img.svg">
+        </div>
+        <div class="text-content">
+          <h1>The Problem</h1>
+          <p>Credit plays a significant role in personal finances,
+              yet many people have struggled to pay their debts on time,
+              budget their income, and save money.</p>
+              <h2> In Fact</h2>
+          <ul>
+            <li>U.S. consumers altogether owe over $1 trillion in credit card debt. (Horymski)</li>
+            <ul>
+              <li>This is roughly equivalent to Sweden's national debt amount. (CEIC data)</li>
+            </ul>
+            <li>And the average balance per person rose to $6,501. (Horymski)</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div id="problem-char">
-        <h1>Problem Characteristics</h1>
-        <P>Replace with the problem characteristics.</P>
+    <!--Problem Characteristics Section-->
+    <section id="problem-char" class="content-section text-image">
+      <div class="section-content">
+        <div class="text-content">
+          <h1>Why is This Happening?</h1>
+          <P></P>
+          <ul>
+            <li>Forgotten monthly payments.</li>
+            <li>Lack of proper budgeting skills.</li>
+            <li>No integration of budgeting and debt management features in mobile applications.</li>
+          </ul>
+        </div>
+        <div class="image-content">
+          <img src="/assets/images/main-content/problem-statement-img.svg">
+        </div>
       </div>
+    </section>
 
-    <div id="solution-statement">
-        <h1>Solution Statement</h1>
-        <p>Replace with the solution statement.</p>
-    </div>
+    <!--Solution Statement Section-->
+    <section id="solution-statement" class="content-section image-text">
+      <div class="section-content">
+        <div class="image-content">
+          <img src="/assets/images/main-content/solution-statement-img.svg">
+        </div>
+        <div class="text-content">
+          <h1>The Solution: CreditTrax</h1>
+          <P>A smartphone app that simplifies financial management by combining debt tracking,
+             AI-driven budgeting suggestions, and visual tools to help users see their progress.
+          </P>
+          <P>With timely payment reminders and personalized advice, 
+            CreditTrax helps users stay on top of their bills while forming smarter
+             financial habits. 
+         </P>
+        </div>
+      </div>
+    </section>
 
-    <div id="solution-char">
-      <h1>Solution Characteristics</h1>
-      <p>Replace with the solution characteristics.</p>
-    </div>
+    <!--Solution Characteristics Section-->
+    <section id="solution-char" class="content-section text-image">
+      <div class="section-content">
+        <div class="text-content">
+          <h1>How CreditTrax Will Help</h1>
+          <ul>
+            <li>designed to give users a clear, organized view of their financial obligations</li>
+            <li>users can input all their debts e.g. credit card balances and 
+              student loans along with their respective interest rates and due dates</li>
+            <li>prompts the user to manually approve payment of a debt, and if they neglect to do so, 
+              the app will issue increasing reminders</li>
+          </ul>
+        </div>
+        <div class="image-content">
+          <img src="/assets/images/main-content/Solution-characteristics-img.svg">
+        </div>
+      </div>
+    </section>
 
-    <div id="google-slides">
+    <!--Google Slide Presentations-->
+    <section id="google-slides" class="restricted-width">
       <h1>Presentations</h1>
       <div class="iframe-container">
         <iframe src="https://docs.google.com/presentation/d/14EV9t-ML2qn7bMKBXpXU3QRP4RzRVhHBQlDXNW9LKe0/embed?start=false&loop=false&delayms=3000"
@@ -73,14 +144,92 @@
           mozallowfullscreen="true" webkitallowfullscreen="true">
         </iframe>
       </div>
-    </div>
+    </section>
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </main>
+    <!--Team Bio Section-->
+    <section id="team-section">
+      <div id="team-content">
+        <h1>Meet The Team!</h1>
+        <div class="image-grid">
+          <!--Darrick Allen-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/darrick.jpg" alt="Darrick Allen">
+            <div class="team-description-box">
+              <h3>Darrick Allen</h3>
+              <h5>Your Role</h5>
+              <p>Currently a senior at Old Dominion University pursuing his BS in Computer Science with a minor in Cybersecurity.
+                 In his free time, he likes to play guitar, games, and of course code.
+                 Has experience in C++, Java, Python, and is currently brushing up on his HTML/CSS.
+              </p>
+            </div>
+          </div>
+          <!--Brian Nguyen-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/brian.jpg" alt="Brian Nguyen">
+            <div class="team-description-box">
+              <h3>Brian Nguyen</h3>
+              <h5>Your Role</h5>
+              <p>Say something about yourself!
+              </p>
+            </div>
+          </div>
+          <!--Bryce Johnson-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/bryce.jpg" alt="Bryce Johnson">
+            <div class="team-description-box">
+              <h3>Bryce Johnson</h3>
+              <h5>Your Role</h5>
+              <p>Say something about yourself!
+              </p>
+            </div>
+          </div>
+          <!--Erika Andrade-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/erika.png" alt="Erika Andrade">
+            <div class="team-description-box">
+              <h3>Erika Andrade</h3>
+              <h5>Your Role</h5>
+              <p>Say something about yourself!
+              </p>
+            </div>
+          </div>
+          <!--Josh Martin-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/josh.jpg" alt="Josh Martin">
+            <div class="team-description-box">
+              <h3>Josh Martin</h3>
+              <h5>Your Role</h5>
+              <p>Say something about yourself!
+              </p>
+            </div>
+          </div>
+          <!--Smit Dalia-->
+          <div class="team-image-frame">
+            <img src="/assets/images/team/smit.png" alt="Smit Dalia">
+            <div class="team-description-box">
+              <h3>Smit Dalia</h3>
+              <h5>Your Role</h5>
+              <p>Say something about yourself!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Site Footer Section-->
+    <footer class="site-footer">
+      {% if site.github.is_project_page %}
+          <span class="site-footer-owner">
+              <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> 
+              is maintained by 
+              <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
+          </span>
+      {% endif %}
+      <span class="site-footer-credits">
+          Team Copper 2024
+      </span>
+    </footer>
+  </main>
   </body>
 </html>

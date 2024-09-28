@@ -1,0 +1,60 @@
+
+/* Header Styling */
+.custom-header {
+    background-image: url("/assets/images/main-content/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 52px;
+}
+
+.header-content {
+    text-align: center;
+    max-width: 1200px;
+    width: 90%;
+    padding-top: 6vh;
+}
+
+#title {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #000000;
+    background-color: rgba(255, 237, 0, 0.23);
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+#tagline {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 0.6rem;
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    background-image: linear-gradient(to right, #2e865b, #256fb9, #0066cc);
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    padding: 0.5rem 1.25rem;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-position: 0 0;
+}

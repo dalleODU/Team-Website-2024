@@ -1,0 +1,66 @@
+
+/* Tablet Viewing */
+@media screen and (max-width: 996px) {
+    .section-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .image-content, .text-content {
+        flex-basis: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .image-content {
+        max-width: 70%;
+        order: 1;
+        margin: 0 auto;
+    }
+    .text-content {
+        order: 2;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Viewing */
+@media screen and (max-width: 576px) {
+    .section-content {
+        padding: 15px;
+    }
+    .text-content {
+        padding: 15px;
+        height: auto;
+    }
+    .image-content img {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 385px) {
+    #title {
+        font-size: 2rem;
+        padding: 5px, 10px;
+    }
+    #tagline {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,23 @@
+
+/*Footer styling*/
+.site-footer {
+    background-image: url('/assets/images/main-content/footer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer a{
+    color: #0066cc;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}

@@ -1,32 +1,29 @@
-/* Smooth scrolling */
+
+/* HTML Styling */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Smooth scrolling for section links */
 }
 
-/* Body styling */
+/* Default Body Styling */
 body {
-    background-color: #FFFFFF;
-    color: #333333;
-    line-height: 1.5;
-    overflow-x: hidden;
-}
-
-
-/* Default styling for main content*/
-.main-custom {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* List of default fonts*/
+    background-color: #FFFFFF; 
+    color: #333333; /* Default text color */
+    line-height: 1.5; 
     font-size: 1.1em;
-    word-wrap: break-word;
-    box-sizing: border-box;
-    color: #333333;
+    word-wrap: break-word; /* By default allow long-running words to break to the next line */
+    box-sizing: border-box; /* Include padding and border in an element's total width. */
+    overflow-x: hidden; /* By default, hide any horizontal overflowing sections (no horizontal scroll bars) */
 }
 
+/* Default h1 - h6 styling in the main content section */
 .main-custom h1,
 .main-custom h2,
 .main-custom h3,
 .main-custom h4,
 .main-custom h5,
 .main-custom h6 {
+    text-align: center;
     font-weight: normal;
     color: #001f3f;
 }

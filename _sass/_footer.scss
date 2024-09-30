@@ -1,22 +1,21 @@
 
 /*Footer styling*/
 .site-footer {
-    background-size: cover;
+    background-size: cover; /* Ensure image covers the entire footer*/
     background-position: center;
-    background-repeat: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat; /* Do not repeat the footer image */
+    display: flex; 
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center contents vertically */
     color: #000000;
     text-align: center;
     padding: 20px;
 }
 
 .site-footer a{
-    color: #0066cc;
+    color: #0066cc; /* Link coloring */
 }
 
 .site-footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline links on hover */
 }

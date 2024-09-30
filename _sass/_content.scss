@@ -1,57 +1,65 @@
 
 /* Main content styling */
 .restricted-width {
-    max-width: 840px;
-    margin: 0 auto;
+    max-width: 840px; 
+    margin: 0 auto; /* Center the content */
 }
 
 /* General section styling */
 .content-section {
-    max-width: 100%;
-    margin: 0 auto;
+    padding-top: 20px; /* Adding some top padding for spacing */
 }
 
 .section-content {
-    display: flex;
+    display: flex; /* Flexbox layout to arrange section items in a row */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+    gap: 20px; /* Set 20px of spacing between flexbox items */
+    padding: 15px;
 }
 
+/* Image content styling */
 .image-content {
-    flex: 0 0 30%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    
+    flex: 0 0 30%; /* Will not grow, shrink, and will attempt to take up 30% of section-content's width */
+    align-items: flex-end; /* Set the image container at the bottom of the section-content */
+    justify-content: center; /* Center the image horizontally */
 }
 
 .image-content img {
-    max-width: 300px;
+    object-fit: contain; /* Ensure images inside of image-content are fully contained */
+    max-width: 100%;
     max-height: 300px;
-    
 }
 
 .text-content {
-    flex: 0 0 calc(70% - 20px);
+    flex: 1; /* container will grow and shrink based on avaliable space */
     background-color: #F9F9F9;
     text-align: left;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 5px;
 }
 
-.text-content h1 {
-    margin-top: 0;
+
+/* Feature Section Styling */
+.feature-section {
+    padding: 20px;
     text-align: center;
 }
 
-.text-content li{
-    text-align: left;
+.feature-section img {
+    max-height: 200px;
 }
+
+.image-text-block {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    flex: 1 1 30%; 
+    gap: 10px; /* 10px of space between image and text blocks */
+}
+ 
 
 /* Google slide styling */
 #google-slides {
@@ -59,10 +67,10 @@
 }
 
 .iframe-container {
-    position: relative;
+    position: relative; /* Allow children items to be positioned absolutely relative to this parent */
     overflow: hidden;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio*/
 }
 
 .iframe-container iframe {

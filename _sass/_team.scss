@@ -1,52 +1,49 @@
 
 /* Team Section Styling */
 #team-section {
-    background-size: contain;
-    background-position: center;
+    background-size: contain; /* Contain the entire background image within section */
+    background-position: center; 
     background-repeat: no-repeat;
     text-align: center;
-    max-width: 100%;
+    max-width: 100%; /* Ensure section cannot exceed 100% width of the screen */
     padding: 15px;
 }
 
 #team-content {
     max-width: 1150px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center content horizontally */
 }
 
 #team-content h1 {
     color: #256fb9;
-    margin-bottom: 30px;
 }
 
 .image-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 20px 0;
+    grid-template-columns: repeat(3, 1fr); /* Grid with 3 columns, each taking 1 fr of space.*/
+    gap: 20px; /* 20px of space around grid items.*/
+    margin: 20px 0; /* 20px of margin to the top and bottom */
 }
 
 .team-image-frame {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    display: flex; 
+    flex-direction: column; /* Stack child elements vertically */
     background: #FFFFFF;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* for smooth hovering effect */
 }
 
 .team-image-frame:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px); /* Move frame up by 5px on hover*/
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Change box-shadow on hover */
 }
 
 .team-image-frame img {
     display: block;
-    object-fit: cover;
-    height: 250px;
-    width: 100%;
+    height: 250px; 
+    object-fit: cover; /* Ensure images cover their position in the frame without distortion */
+    width: 100%; /* Ensure images stretch the entire width of their frame */
 }
 
 .team-description-box {
@@ -54,21 +51,20 @@
     text-align: center;
     background-color: #f8f8f8;
     color: #333333;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    max-height: none;
-    flex-grow: 1;
+    max-height: none; /* No max height limit */
+    flex-grow: 1; /* Ensure the description boxes grow inside of the frame */
 }
 
 .team-description-box h3 {
     color: #256fb9;
     margin: 0;
+    font-weight: normal;
 }
 
 .team-description-box h5 {
-    background: linear-gradient(90deg, #2e865b, #256fb9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #2e865b, #256fb9); /* Gradient coloring for text */
+    -webkit-background-clip: text; /* Make background visible only within the text*/
+    -webkit-text-fill-color: transparent; /* Make text transparent so we see the gradient */
     margin: 0;
 }
 

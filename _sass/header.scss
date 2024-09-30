@@ -1,31 +1,29 @@
 
 /* Header Styling */
 .custom-header {
-    background-size: cover;
+    background-size: cover; /* Background image should adjust to cover the entire header */
     background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-start;
+    background-repeat: no-repeat; /* Ensure no repeating image pattern */
+    display: flex; 
     justify-content: center;
-    height: 100vh;
-    margin-top: 52px;
+    height: 100vh; /* Cover the entire view height */
+    margin-top: 52px; /* Margin adjustment for the nav-bar */
 }
 
 .header-content {
     text-align: center;
-    max-width: 1200px;
-    width: 90%;
-    padding-top: 6vh;
+    max-width: 90%; /* limit content to 90% width of the screen */
+    padding-top: 6vh; /* Padding from the top of the header */
 }
 
 #title {
-    display: inline-block;
+    display: inline-block; /* We don't want the title to take the entire width of the header-content */
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 3.5rem;
     color: #000000;
-    background-color: rgba(255, 237, 0, 0.23);
-    border-radius: 10px;
+    background-color: rgba(255, 237, 0, 0.23); /* Give the title a yellow highlight with reduced opacity */
+    border-radius: 10px; /* Give the yellow highlight curved corners */
     margin-bottom: 0;
 }
 
@@ -35,25 +33,20 @@
     margin-bottom: 0.6rem;
 }
 
-.header-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .btn {
-    display: inline-block;
-    background-image: linear-gradient(to right, #2e865b, #256fb9, #0066cc);
-    background-size: 300% 100%;
-    background-position: 100% 0;
-    padding: 0.5rem 1.25rem;
+    /* Set up left sliding gradient effect on hover */
+    background-image: linear-gradient(to right, #2e865b, #256fb9, #0066cc); /* background color for the button */
+    background-size: 300% 100%; /* Make the gradient 3 times wider and the same height as the button */
+    background-position: 100% 0; /* set inital background position all the way to the right*/
+    transition: all 0.5s ease; /* Set slide effect to ease in over specified time */
+    padding: 0.4rem 1.1rem; 
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
-    transition: all 0.5s ease;
 }
 
 .btn:hover {
     color: #ffffff;
-    background-position: 0 0;
+    background-position: 0 0; /* Adjust position of the background on hover for gradient effect*/
 }

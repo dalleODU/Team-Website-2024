@@ -1,42 +1,28 @@
 
 /* Tablet Viewing */
-@media screen and (max-width: 996px) {
-    .section-content {
-        flex-direction: column;
-        padding: 15px;
-    }
-    .image-content, .text-content {
-        flex-basis: 100%;
-        height: auto;
-        text-align: center;
-    }
-    .image-content {
-        max-width: 70%;
-        order: 1;
-        margin: 0 auto;
-    }
-    .text-content {
-        order: 2;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    p {
-        font-size: 1.2rem;
+@media screen and (max-width: 1024px) {
+    .header-content {
+        padding-top: 12vh;
     }
 }
 
 /* Mobile Viewing */
 @media screen and (max-width: 576px) {
+    .header-content {
+        margin-top: 0px;
+        padding-top: 6vh;
+    }
     .section-content {
-        padding: 15px;
+        flex-direction: column; /* stack items verticaly*/
+    }
+    .feature-section{
+        flex-direction: column; /* stack items verticaly*/
+    }
+    .feature-section .image-text-block {
+        margin-bottom: 20px;
     }
     .text-content {
-        padding: 15px;
-        height: auto;
-    }
-    .image-content img {
-        max-width: 100%;
+        padding: 15px; /* Overwrite inherited 20px padding */
     }
     h1 {
         font-size: 2rem;

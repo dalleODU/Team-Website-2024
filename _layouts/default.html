@@ -30,7 +30,13 @@
             <li><a href="#team-section">The Team</a></li>
           </ul>
         </li>
-        <li><a href="#google-slides">Presentations</a></li>
+        <li>
+          <a href="#">Presentations</a>
+          <ul class="dropdown">
+            <li><a href="#feasibility-1">Feasibility 1</a></li>
+            <li><a href="#feasibility-2">Feasibility 2</a></li>
+          </ul>
+        </li>
         <li><a href="#">Deliverables</a></li>
         <li><a href="#">References</a></li>
       </ul>
@@ -171,11 +177,37 @@
     <!--Google Slide Presentations-->
     <section id="google-slides" class="restricted-width">
       <h1>Presentations</h1>
-      <div class="iframe-container">
-        <iframe src="https://docs.google.com/presentation/d/14EV9t-ML2qn7bMKBXpXU3QRP4RzRVhHBQlDXNW9LKe0/embed?start=false&loop=false&delayms=3000"
-          frameborder="0" allowfullscreen="true" 
-          mozallowfullscreen="true" webkitallowfullscreen="true">
-        </iframe>
+
+      <!--Carousel for Presentation Slides-->
+      <div class="carousel">
+
+        <!--Feasibility 1 Slide-->
+        <div id="feasibility-1" class="slide">
+          <h2>Feasibility 1</h2>
+          <div class="iframe-container">
+            <iframe src="https://docs.google.com/presentation/d/14EV9t-ML2qn7bMKBXpXU3QRP4RzRVhHBQlDXNW9LKe0/embed?start=false&loop=false&delayms=3000"
+              frameborder="0" allowfullscreen="true" 
+              mozallowfullscreen="true" webkitallowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+
+        <!--Feasibility 2 Slide-->
+        <div id="feasibility-2" class="slide">
+          <h2>Feasibility 2</h2>
+          <div class="iframe-container">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8jnOdu0sk3YKkhcM3FaZNAZAAvVH7xGw2uyjP-wgNHbuV1KaLUhJJKZGC9Nh6wYNgsXRsILgnlIeS/embed?start=false&loop=false&delayms=3000" 
+            frameborder="0" allowfullscreen="true" 
+            mozallowfullscreen="true" webkitallowfullscreen="true">
+            </iframe>
+          </div>
+        </div>  
+      </div>
+
+      <!--Navigation Indicators for The Carousel-->
+      <div class="carousel-nav">
+        <a href="#feasibility-1"></a>
+        <a href="#feasibility-2"></a>
       </div>
     </section>
 

@@ -61,18 +61,49 @@
 }
  
 
-/* Google slide styling */
+/* Google Slide Styling */
 #google-slides {
     text-align: center;
 }
 
+/* Carousel for Google Slide Presentations */
+.carousel {
+    display: flex;
+    overflow-x: auto; /*Allow for horizontal deck scrolling */
+    scroll-snap-type: x mandatory; /* Mandatory snapping on x-axis (We don't want to be stuck in the middle of a deck */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smoother scrolling for mobile users */
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+}
+.slide h2 {
+    margin-bottom: 10px;
+}
+
+/* Scroll bar properties */
+.carousel::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #666666;
+    border-radius: 8px;
+}
+
+/* Container for Our Slide Presentations */
 .iframe-container {
-    position: relative; /* Allow children items to be positioned absolutely relative to this parent */
-    overflow: hidden;
+    position: relative;
+    height: 0;
     width: 100%;
     padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio*/
 }
 
+/* The Presentation Slides */
 .iframe-container iframe {
     position: absolute;
     height: 100%;
@@ -80,4 +111,23 @@
     top: 0;
     left: 0;
     border-radius: 5px;
+}
+
+/* Circle navigation indicators under the carousel */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.carousel-nav a {
+    background-color: #cccccc;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.carousel-nav a:focus {
+    background-color: #333333; /* Change of color for when in focus */
 }

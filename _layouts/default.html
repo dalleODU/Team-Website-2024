@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+  
   <head>
     <meta charset="UTF-8">
     {% seo %}
+    <!--Importing Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
 
-  <!--Site Body-->
+  <!--SITE BODY-->
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <!-- Navigation Bar-->
+    <!-- NAVIGATION BAR-->
     <nav>
       <ul class="nav-bar">
-        <li><a href="./">Home</a></li>
+
+        <!--Home-->
+        <li><a href="#">Home</a></li>
+
+        <!--About-->
         <li>
           <a href="#">About</a>
           <ul class="dropdown">
@@ -30,23 +36,33 @@
             <li><a href="#team-section">The Team</a></li>
           </ul>
         </li>
+
+        <!--Presentations-->
         <li>
-          <a href="#">Presentations</a>
+          <a href="#google-slides">Presentations</a>
           <ul class="dropdown">
             <li><a href="#feasibility-1">Feasibility 1</a></li>
             <li><a href="#feasibility-2">Feasibility 2</a></li>
+            <li><a href="#feasibility-3">Feasibility 3</a></li>
           </ul>
         </li>
+
+        <!--Deliverables Placeholder-->
         <li><a href="#">Deliverables</a></li>
+
+        <!--References Placeholder-->
         <li><a href="#">References</a></li>
       </ul>
     </nav>
 
-    <!--Site Header-->
+    <!--SITE HEADER-->
     <header class="custom-header" role="banner" style="background-image: url('./assets/images/main-content/banner.webp');">
       <div class="header-content">
+
           <h1 id="title">CreditTrax</h1>
-          <h2 id="tagline">Your path to better credit and smarter budgeting.</h2>
+          <h2 id="tagline">Empowering young professionals for financial Success</h2>
+
+          <!--Github Button-->
           <div class="header-buttons">
               {% if site.github.is_project_page %}
                   <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
@@ -56,257 +72,390 @@
                   <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
               {% endif %}
           </div>
+
       </div>
     </header>
   
-  <!--Main Content Area-->
-  <main id="content" class="main-custom" role="main">
+    <!--MAIN CONTENT AREA-->
+    <main id="content" class="main-custom" role="main">
 
-    <!--Problem Statement Section-->
-    <section id="problem-statement" class="content-section image-text">
-      <div class="section-content">
-        <div class="image-content">
-          <img src="./assets/images/main-content/problem-char-img.webp">
-        </div>
-        <div class="text-content">
-          <h1>The Problem</h1>
-          <p>Credit plays a significant role in personal finances,
-              yet many people have struggled to pay their debts on time,
-              budget their income, and save money.</p>
-              <h2> In Fact</h2>
-          <ul>
-            <li>U.S. consumers altogether owe over $1 trillion in credit card debt. (Horymski)</li>
-            <ul>
-              <li>This is roughly equivalent to Sweden's national debt amount. (CEIC data)</li>
-            </ul>
-            <li>And the average balance per person rose to $6,501. (Horymski)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <!--PROBLEM STATEMENT SECTION-->
+      <section id="problem-statement" class="content-section image-text">
 
-    <!--Problem Characteristics Section-->
-    <section id="problem-char" class="content-section feature-section">
-      <h1>Why is this happening?</h1>
-      <div class="section-content">
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/prob-char-img-2.webp">
-          </div>
-          <div class="text-content">
-            <h2>Financial Education</h2>
-            <p>Lack of proper budgeting skills and personalized advice result in overspending and financial stress.</p>
-          </div>
-        </div>
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/prob-char-img-3.webp">
-          </div>
-          <div class="text-content">
-            <h2>A Lack of Options</h2>
-            <p>No integration of budgeting and debt management features in existing mobile applications.</p>
-          </div>
-        </div>
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/problem-char-img-3.webp">
-          </div>
-          <div class="text-content">
-            <h2>Forgotten Payments</h2>
-            <p>Forgotten monthly payments lead to accumulating debt and penalites.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!--Section Content Wrapper-->
+        <div class="section-content">
 
-    <!--Solution Statement Section-->
-    <section id="solution-statement" class="content-section image-text">
-      <div class="section-content">
-        <div class="image-content">
-          <img src="./assets/images/main-content/solution-statement-img.webp">
+          <!--Image Content-->
+          <div class="image-content">
+            <img src="./assets/images/main-content/problem-char-img.webp">
+          </div>
+
+          <!--Text Content-->
+          <div class="text-content">
+            <h1>Our Problem Statement</h1>
+            <p>Many young professionals in the U.S. struggle with their finances
+               due to the overwhelming burden of student loans,
+                ever increasing credit rates,
+                 and a lack of experience with crucial financial skills.</p>
+            <p>
+              Balancing the pressures of starting a career while facing financial uncertainty leads to the accumulation of debt,
+               increased anxiety, and delayed life milestones such as marriage,
+                home ownership, and starting a family.
+            </p>
+            <p>
+              CreditTrax aims to empower young professionals with personalized budgeting and debt management tools designed to simplify
+               financial decisions, enhance financial literacy, and set young professionals back on track for financial success.
+            </p>
+
+          </div>
         </div>
-        <div class="text-content">
-          <h1>The Solution: CreditTrax</h1>
-          <P>A smartphone app that simplifies financial management by combining debt tracking,
-             AI-driven budgeting suggestions, and visual tools to help users see their progress.
+      </section>
+
+      <!--PROBLEM CHARACTERISTICS SECTION-->
+      <section id="problem-char" class="content-section feature-section">
+        <h1>Problem Characteristics</h1>
+
+        <!--Section Content Wrapper-->
+        <div class="section-content">
+
+          <!--Image Text Block 1-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/prob-char-img-2.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>Financial Literacy</h2>
+              <p>A lack of financial literacy contributes to growing debt and confusion for young professionals, including:</p>
+              <ul>
+                <li>Difficulty creating a realistic budget.</li>
+                <li>Uncertainty about where their money is going.</li>
+                <li>Struggles with prioritizing expenses.</li>
+                <li>Lack of understanding about how late payments affect their financial future.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Image Text Block 2-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/prob-char-img-3.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>A Lack of Options</h2>
+              <p>A Lack of well-rounded financial options results in issues such as:</p>
+              <ul>
+                <li>Relying on multiple seperate financial apps to manage finances.</li>
+                <li>Increased difficulty staying organized, making financial management harder than it should be.</li>
+                <li>A blurred vision of long-term financial goals.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Image Text Block 3-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/problem-char-img-3.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>Forgotten Payments</h2>
+              <p>Forgotten monthly payments can lead to accumulating debt and penalites, including:</p>
+              <ul>
+                <li>Rising interest rates.</li>
+                <li>Late fees and penalties.</li>
+                <li>A declining credit score.</li>
+                <ul>
+                  <li>Difficulty making significant purchases.</li>
+                </ul>
+                <li>Additional time needed to pay off debt.</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!--SOLUTION STATEMENT SECTION-->
+      <section id="solution-statement" class="content-section image-text">
+
+        <!--Section Content Wrapper-->
+        <div class="section-content">
+
+          <!--Image Content-->
+          <div class="image-content">
+            <img src="./assets/images/main-content/solution-statement-img.webp">
+          </div>
+
+          <!--Text Content-->
+          <div class="text-content">
+            <h1>The Solution: CreditTrax</h1>
+            <P>A smartphone app that simplifies financial management by combining debt tracking,
+              AI-driven budgeting suggestions, and visual tools to help users see their progress.
+            </P>
+            <P>With timely payment reminders and personalized advice, 
+              CreditTrax helps users stay on top of their bills while forming smarter
+              financial habits. 
           </P>
-          <P>With timely payment reminders and personalized advice, 
-            CreditTrax helps users stay on top of their bills while forming smarter
-             financial habits. 
-         </P>
-        </div>
-      </div>
-    </section>
+          </div>
 
-    <!--Solution Characteristics Section-->
-    <section id="solution-char" class="content-section feature-section">
-      <h1>How CreditTrax Will Help</h1>
-      <div class="section-content">
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/solution-char-img-1.webp">
-          </div>
-          <div class="text-content">
-            <h2>Finance Simplified</h2>
-            <p>Designed to give users a clear, organized view of their financial obligations.</p>
-          </div>
         </div>
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/solution-char-img-2.webp">
+      </section>
+
+      <!--SOLUTION CHARACTERISTICS SECTION-->
+      <section id="solution-char" class="content-section feature-section">
+        <h1>How CreditTrax Will Help</h1>
+
+        <!--Section Content Wrapper-->
+        <div class="section-content">
+
+          <!--Image Text Block 1-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/solution-char-img-1.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>Finance Simplified</h2>
+              <p>Designed to give users a clear, organized view of their financial obligations.</p>
+            </div>
           </div>
-          <div class="text-content">
-            <h2>All Your Debts in One Place</h2>
-            <p>Users can input all their debts e.g. credit card balances and student 
-              loans along with their respective interest rates and due dates.</p>
+
+          <!--Image Text Block 2-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/solution-char-img-2.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>All Your Debts in One Place</h2>
+              <p>Users can input all their debts e.g. credit card balances and student 
+                loans along with their respective interest rates and due dates.</p>
+            </div>
           </div>
+
+          <!--Image Text Block 3-->
+          <div class="image-text-block">
+
+            <!--Image Content-->
+            <div class="image-content">
+              <img src="./assets/images/main-content/solution-char-img-3.webp">
+            </div>
+
+            <!--Text Content-->
+            <div class="text-content">
+              <h2>Never Forget a Payment</h2>
+              <p>Prompts the user to manually approve payment of a debt, and if they 
+                neglect to do so, the app will issue increasing reminders.</p>
+            </div>
+          </div>
+
         </div>
-        <div class="image-text-block">
-          <div class="image-content">
-            <img src="./assets/images/main-content/solution-char-img-3.webp">
+      </section>
+
+      <!--GOOGLE SLIDE PRESENTATIONS-->
+      <section id="google-slides" class="restricted-width">
+        <h1>Presentations</h1>
+
+        <!--Carousel for Presentation Slides-->
+        <div class="carousel">
+
+          <!--Feasibility 1 Slide-->
+          <div id="feasibility-1" class="slide">
+            <h2>Feasibility 1</h2>
+            <div class="iframe-container">
+              <iframe src="https://docs.google.com/presentation/d/14EV9t-ML2qn7bMKBXpXU3QRP4RzRVhHBQlDXNW9LKe0/embed?start=false&loop=false&delayms=3000"
+                frameborder="0" allowfullscreen="true" 
+                mozallowfullscreen="true" webkitallowfullscreen="true">
+              </iframe>
+            </div>
           </div>
-          <div class="text-content">
-            <h2>Never Forget a Payment</h2>
-            <p>Prompts the user to manually approve payment of a debt, and if they 
-              neglect to do so, the app will issue increasing reminders.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!--Google Slide Presentations-->
-    <section id="google-slides" class="restricted-width">
-      <h1>Presentations</h1>
-
-      <!--Carousel for Presentation Slides-->
-      <div class="carousel">
-
-        <!--Feasibility 1 Slide-->
-        <div id="feasibility-1" class="slide">
-          <h2>Feasibility 1</h2>
-          <div class="iframe-container">
-            <iframe src="https://docs.google.com/presentation/d/14EV9t-ML2qn7bMKBXpXU3QRP4RzRVhHBQlDXNW9LKe0/embed?start=false&loop=false&delayms=3000"
+          <!--Feasibility 2 Slide-->
+          <div id="feasibility-2" class="slide">
+            <h2>Feasibility 2</h2>
+            <div class="iframe-container">
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8jnOdu0sk3YKkhcM3FaZNAZAAvVH7xGw2uyjP-wgNHbuV1KaLUhJJKZGC9Nh6wYNgsXRsILgnlIeS/embed?start=false&loop=false&delayms=3000" 
               frameborder="0" allowfullscreen="true" 
               mozallowfullscreen="true" webkitallowfullscreen="true">
-            </iframe>
+              </iframe>
+            </div>
           </div>
+
+          <!--Feasibility 3 Slide-->
+          <div id="feasibility-3" class="slide">
+            <h2>Feasibility 3</h2>
+            <div class="iframe-container">
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSHAPNj3nlat93OxzE_IaVYeSHbqlI0LvjyWYz-gZ5Cwsb2Wag3MVHHNJwE5t6nQC6CvxyDRL3mEy4d/embed?start=false&loop=false&delayms=3000" 
+              frameborder="0" allowfullscreen="true" 
+              mozallowfullscreen="true" webkitallowfullscreen="true">
+              </iframe>
+            </div>
+          </div>
+
         </div>
 
-        <!--Feasibility 2 Slide-->
-        <div id="feasibility-2" class="slide">
-          <h2>Feasibility 2</h2>
-          <div class="iframe-container">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT8jnOdu0sk3YKkhcM3FaZNAZAAvVH7xGw2uyjP-wgNHbuV1KaLUhJJKZGC9Nh6wYNgsXRsILgnlIeS/embed?start=false&loop=false&delayms=3000" 
-            frameborder="0" allowfullscreen="true" 
-            mozallowfullscreen="true" webkitallowfullscreen="true">
-            </iframe>
-          </div>
-        </div>  
-      </div>
+        <!--Navigation Indicators for The Carousel-->
+        <div class="carousel-nav">
+          <a href="#feasibility-1"></a>
+          <a href="#feasibility-2"></a>
+          <a href="#feasibility-3"></a>
+        </div>
+      </section>
 
-      <!--Navigation Indicators for The Carousel-->
-      <div class="carousel-nav">
-        <a href="#feasibility-1"></a>
-        <a href="#feasibility-2"></a>
-      </div>
-    </section>
+      <!--TEAM BIO SECTION-->
+      <section id="team-section" style="background-image: url('./assets/images/main-content/team-background.webp');">
 
-    <!--Team Bio Section-->
-    <section id="team-section" style="background-image: url('./assets/images/main-content/team-background.webp');">
-      <div id="team-content">
-        <h1>Meet The Team!</h1>
-        <div class="image-grid">
-          <!--Darrick Allen-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/darrick.webp" alt="Darrick Allen">
-            <div class="team-description-box">
-              <h3>Darrick Allen</h3>
-              <h5>Your Role</h5>
-              <p>Currently a senior at Old Dominion University pursuing his BS in Computer Science with a minor in Cybersecurity.
-                 In his free time, he likes to play guitar, games, and of course code.
-                 Has experience in C++, Java, Python, and is currently brushing up on his HTML/CSS.
-              </p>
+        <!--Team Content Wrapper-->
+        <div id="team-content">
+          <h1>Meet The Team!</h1>
+
+          <!--Image Grid-->
+          <div class="image-grid">
+
+            <!--Darrick Allen-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/darrick.webp" alt="Darrick Allen">
+
+              <!--Description Box-->
+              <div class="team-description-box">
+                <h3>Darrick Allen</h3>
+                <h5>Webmaster / Frontend Developer</h5>
+                <p>Currently a senior at Old Dominion University pursuing his BS in Computer Science with a minor in Cybersecurity.
+                  In his free time, he likes to play guitar, games, and of course code.
+                  Has experience in C++, Java, Python, and is currently brushing up on his HTML/CSS.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Brian Nguyen-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/brian.webp" alt="Brian Nguyen">
-            <div class="team-description-box">
-              <h3>Brian Nguyen</h3>
-              <h5>Your Role</h5>
-              <p>Brian is a senior majoring in Computer Science with a minor in Cybersecurity at Old Dominion University.  
-                 He likes to learn about cars, zoology, and history.  He also plays video games and watch movies.  
-                 Brian has experience in C++, Java, Unix, and dabbled into other languages.  
-              </p>
+
+            <!--Brian Nguyen-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/brian.webp" alt="Brian Nguyen">
+
+              <!--Description-->
+              <div class="team-description-box">
+                <h3>Brian Nguyen</h3>
+                <h5>Project Lead</h5>
+                <p>Brian is a senior majoring in Computer Science with a minor in Cybersecurity at Old Dominion University.  
+                  He likes to learn about cars, zoology, and history.  He also plays video games and watch movies.  
+                  Brian has experience in C++, Java, Unix, and dabbled into other languages.  
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Bryce Johnson-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/bryce.webp" alt="Bryce Johnson">
-            <div class="team-description-box">
-              <h3>Bryce Johnson</h3>
-              <h5>Your Role</h5>
-              <p>He is a senior at Old Dominion University, majoring in computer science, and works full-time as a network engineer. 
-				 In his free time, he enjoys watching sports, spending time with family and friends, and taking care of 
-				 his Norwegian Elkhound named Loki. His technical skills are primarily in networking and system administration, 
-				 but he also has proficiency in coding with Java and C++.
-              </p>
+
+            <!--Bryce Johnson-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/bryce.webp" alt="Bryce Johnson">
+
+              <!--Description-->
+              <div class="team-description-box">
+                <h3>Bryce Johnson</h3>
+                <h5>Database Specialist</h5>
+                <p>He is a senior at Old Dominion University, majoring in computer science, and works full-time as a network engineer. 
+                  In his free time, he enjoys watching sports, spending time with family and friends, and taking care of 
+                  his Norwegian Elkhound named Loki. His technical skills are primarily in networking and system administration, 
+                  but he also has proficiency in coding with Java and C++.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Erika Andrade-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/erika.webp" alt="Erika Andrade">
-            <div class="team-description-box">
-              <h3>Erika Andrade</h3>
-              <h5>Your Role</h5>
-              <p>She is currently a senior majoring in Computer Science with a strong passion for technology and creativity. 
-                As a self-taught piano player, she enjoys playing music in her free time. Additionally, she's been a long time fan of video games, 
-                particularly <i>The Sims</i> franchise. Her technical skills include proficiency in C++ and Java with some experience in Python.
-              </p>
+
+            <!--Erika Andrade-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/erika.webp" alt="Erika Andrade">
+
+              <!--Description-->
+              <div class="team-description-box">
+                <h3>Erika Andrade</h3>
+                <h5>Backend Developer</h5>
+                <p>She is currently a senior majoring in Computer Science with a strong passion for technology and creativity. 
+                  As a self-taught piano player, she enjoys playing music in her free time. Additionally, she's been a long time fan of video games, 
+                  particularly <i>The Sims</i> franchise. Her technical skills include proficiency in C++ and Java with some experience in Python.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Josh Martin-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/josh.webp" alt="Josh Martin">
-            <div class="team-description-box">
-              <h3>Josh Martin</h3>
-              <h5>Your Role</h5>
-              <p>A senior majoring in Computer Science at Old Dominion University, with a minor in Cybersecurity.
-                Currently an employee at Riverside Regional Medical Center, and is looking to move into either Software Development or IT in the medical field.
-                Has experience programming in C++, Java, Python, and is currently learning Rust on the side.
-              </p>
+
+            <!--Josh Martin-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/josh.webp" alt="Josh Martin">
+
+              <!--Description-->
+              <div class="team-description-box">
+                <h3>Josh Martin</h3>
+                <h5>Your Role</h5>
+                <p>A senior majoring in Computer Science at Old Dominion University, with a minor in Cybersecurity.
+                  Currently an employee at Riverside Regional Medical Center, and is looking to move into either Software Development or IT in the medical field.
+                  Has experience programming in C++, Java, Python, and is currently learning Rust on the side.
+                </p>
+              </div>
             </div>
-          </div>
-          <!--Smit Dalia-->
-          <div class="team-image-frame">
-            <img src="./assets/images/team/smit.webp" alt="Smit Dalia">
-            <div class="team-description-box">
-              <h3>Smit Dalia</h3>
-              <h5>Your Role</h5>
-              <p>He is a senior majoring in Computer Science at Old Dominion University. 
-                In his free time, he enjoys playing cricket and watching anime. 
-                He has experience in Python, C++, and Java, along with some exposure to other programming languages.
-                He is particularly eager to dive deeper into artificial intelligence and machine learning in the future.
-              </p>
+
+            <!--Smit Dalia-->
+            <div class="team-image-frame">
+
+              <!--Image-->
+              <img src="./assets/images/team/smit.webp" alt="Smit Dalia">
+
+              <!--Description-->
+              <div class="team-description-box">
+                <h3>Smit Dalia</h3>
+                <h5>Your Role</h5>
+                <p>He is a senior majoring in Computer Science at Old Dominion University. 
+                  In his free time, he enjoys playing cricket and watching anime. 
+                  He has experience in Python, C++, and Java, along with some exposure to other programming languages.
+                  He is particularly eager to dive deeper into artificial intelligence and machine learning in the future.
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Site Footer Section-->
-    <footer class="site-footer" style="background-image: url('./assets/images/main-content/footer.webp');">
-      {% if site.github.is_project_page %}
-          <span class="site-footer-owner">
-              <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> 
-              is maintained by 
-              <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
-          </span>
-      {% endif %}
-      <span class="site-footer-credits">
-          Team Copper 2024
-      </span>
-    </footer>
-  </main>
+      <!--SITE FOOTER SECTION-->
+      <footer class="site-footer" style="background-image: url('./assets/images/main-content/footer.webp');">
+
+        <!--Default Footer Content-->
+        {% if site.github.is_project_page %}
+            <span class="site-footer-owner">
+                <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> 
+                is maintained by 
+                <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.
+            </span>
+        {% endif %}
+
+        <!--Team Name-->
+        <span class="site-footer-credits">
+            Team Copper 2024
+        </span>
+      </footer>
+
+    </main>
   </body>
 </html>

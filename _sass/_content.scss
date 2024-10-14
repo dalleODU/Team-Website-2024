@@ -131,3 +131,19 @@
 .carousel-nav a:focus {
     background-color: #333333; /* Change of color for when in focus */
 }
+
+
+/*Reference Section Styling*/
+#references {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.reference-link {
+    display: block;
+    margin-left: 5%;
+}
+
+#references ol li {
+    margin-bottom: 20px;
+}

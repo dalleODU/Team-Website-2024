@@ -22,9 +22,7 @@
 /* Image content styling */
 .image-content {
     display: flex;
-    flex: 0 0 30%; /* Will not grow, shrink, and will attempt to take up 30% of section-content's width */
-    align-items: flex-end; /* Set the image container at the bottom of the section-content */
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center;
 }
 
 .image-content img {

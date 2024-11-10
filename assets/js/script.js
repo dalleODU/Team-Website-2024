@@ -40,3 +40,37 @@ document.addEventListener('DOMContentLoaded', () => {
         intersectionObserver.observe(iframeContainer);
     })
 });
+
+// Get all deliverable items.
+const deliverableImages = document.querySelectorAll('.deliverable-image img');
+const lightboxOverlay = document.getElementById('lightbox');
+const lightboxImage = lightboxOverlay.querySelector('img');
+const lightboxCloseButton = lightboxOverlay.querySelector('.close-button')
+
+// Add click event to each deliverable item.
+deliverableImages.forEach(image => {
+    image.addEventListener('click', () => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxOverlay.classList.add('active');
+    });
+});
+
+// Exit the lightbox overlay when the close button is clicked.
+lightboxCloseButton.addEventListener('click', () => {
+    lightboxOverlay.classList.remove('active');
+});
+
+// Exit the lightbox overlay when clicking outside of the image.
+lightboxOverlay.addEventListener('click', (event) => {
+    if (event.target === lightboxOverlay) {
+        lightboxOverlay.classList.remove('active');
+    }
+});
+
+// Exit the lightbox overlay with the press of the esc key.
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && lightboxOverlay.classList.contains('active')) {
+        lightboxOverlay.classList.remove('active');
+    }
+});

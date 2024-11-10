@@ -131,6 +131,84 @@
     background-color: #333333; /* Change of color for when in focus */
 }
 
+/*Deliverables*/
+#deliverables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 0 2.5% 0 2.5%;
+    justify-content: center;
+}
+
+.deliverable-section-1,
+.deliverable-section-2 {
+    min-width: 250px;
+    cursor: pointer;
+    position: relative;
+}
+
+.deliverable-section-1 {
+    flex: 0 0 calc(33.33% - 5%);
+}
+
+.deliverable-section-2 {
+    flex: 0 0 calc(25% - 5%);
+}
+
+.deliverable-title {
+    text-align: center;
+    color: #256fb9;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.deliverable-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 5%;
+    transition: transform 0.3s ease;
+}
+
+.deliverable-image:hover img {
+    transform: scale(1.05);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 10;
+}
+
+.lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
 
 /*Document-Block Styling*/
 .document-block {

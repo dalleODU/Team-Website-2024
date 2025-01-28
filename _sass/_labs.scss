@@ -1,0 +1,29 @@
+
+.lab-grid{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); //4 columns, 1 fr each
+    gap: 1rem;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto; //Center the container
+}
+
+.lab-grid a {
+    text-decoration: none; // Remove the default underline
+    display: block;
+    background-color: #f3f4f6;
+    text-align: center;
+    color: #256fb9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease, transform 0.5s ease; // Animate background color and transform properties over 0.5s
+
+}
+
+.lab-grid a:hover {
+    background-color: #e5e7ea;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}

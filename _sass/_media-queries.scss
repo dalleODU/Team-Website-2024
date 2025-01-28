@@ -7,7 +7,7 @@
 }
 
 /* Mobile Viewing */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .header-content {
         margin-top: 0px;
         padding-top: 6vh;
@@ -34,7 +34,7 @@
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
-    .image-grid-3, .image-grid-4 {
+    .lab-grid, .image-grid-3, .image-grid-4 {
         grid-template-columns: 1fr;
     }
 }

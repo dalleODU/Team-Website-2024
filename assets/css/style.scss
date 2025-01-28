@@ -3,22 +3,32 @@
 
 @import "{{ site.theme }}";
 
-/*Global styling*/
+/*Global Styling*/
 @import "global";
 
-/* Navigation bar styling */
-@import "nav";
+/* Navigation Bar Styling */
+@import "navbar";
 
-/* Header styling */
+/* Header Styling */
 @import "header";
 
-/* Content content styling*/
-@import "content";
+/* General Content Styling*/
+@import "problem-solution";
 
-/* Team section styling */
+/* Presentation Styling */
+@import "presentations";
+
+/* Deliverables Styling */
+@import "deliverables";
+
+/* Glossary and References Styling */
+@import "document";
+
+/* Team Section Styling */
 @import "team";
 
-/* Footer styling */
+/* Footer Styling */
 @import "footer";
 
+/* Mobile Styling */
 @import "media-queries"

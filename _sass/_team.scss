@@ -10,7 +10,7 @@
 }
 
 #team-content {
-    max-width: 1150px;
+    max-width: 1250px;
     margin: 0 auto; /* Center content horizontally */
 }
 
@@ -18,9 +18,15 @@
     color: #256fb9;
 }
 
-.image-grid{
+.image-grid-3{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Grid with 3 columns, each taking 1 fr of space.*/
+    gap: 20px; /* 20px of space around grid items.*/
+    margin: 20px 0; /* 20px of margin to the top and bottom */
+}
+.image-grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Grid with 3 columns, each taking 1 fr of space.*/
     gap: 20px; /* 20px of space around grid items.*/
     margin: 20px 0; /* 20px of margin to the top and bottom */
 }

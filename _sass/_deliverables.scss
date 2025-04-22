@@ -8,7 +8,8 @@
 }
 
 .deliverable-section-1,
-.deliverable-section-2 {
+.deliverable-section-2, 
+.deliverable-section-3{
     min-width: 250px;
     cursor: pointer;
     position: relative;
@@ -20,6 +21,10 @@
 
 .deliverable-section-2 {
     flex: 0 0 calc(25% - 5%);
+}
+
+.deliverable-section-3 {
+    flex: 0 0 calc(50% - 5%);
 }
 
 .deliverable-title {
